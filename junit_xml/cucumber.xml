@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="13" time="3.523776">
+    <testcase classname="Testing Post, Put, Get, Delete API features of Pet" name="Posting the new values of Pet" time="2.858346">
+        <system-out><![CDATA[Given User Posts the new details for Pet....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Pet" name="Updating the exisiting values of Pet" time="0.061906">
+        <system-out><![CDATA[Given User updates the existing details for Pet.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Pet" name="Getting the value of Pet" time="0.183291">
+        <system-out><![CDATA[Given User gets the pet details by "available"..............................passed
+Given User gets the pet details by "Mark"...................................passed
+Given User gets the pet details by "12".....................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Pet" name="Deleting the value of Pet" time="0.040841">
+        <system-out><![CDATA[Given User deletes the Pet ID "10"..........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Store" name="Posting the new values of Pet" time="0.03007">
+        <system-out><![CDATA[Given User Posts the new details for Store..................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Store" name="Getting the inventory by Status and Order ID" time="0.068059">
+        <system-out><![CDATA[Given User gets the Store details by order id "10"..........................passed
+Given User gets the inventory details by status.............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Store" name="Deleting the purchase order" time="0.025304">
+        <system-out><![CDATA[Given User deletes the Order ID "10"........................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of Store" name="User validating whether the order details got deleted by trying get the status of deleted order" time="0.033796">
+        <system-out><![CDATA[Given User validates whether order details deleted or not by getting the order id.passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of User" name="Creating a single and multiple user data" time="0.048882">
+        <system-out><![CDATA[Given Creating a new user...................................................passed
+Then Creating a list of user................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of User" name="Updating the exisiting data of the user" time="0.02727">
+        <system-out><![CDATA[Given Updating the existing details of "John"...............................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of User" name="Making the user logging in getting the details of the user then logging out the user" time="0.087468">
+        <system-out><![CDATA[Given User login to the system by using username "John" and password "12345".passed
+Then Getting the user detail of "John"......................................passed
+Then User is logging out....................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of User" name="Deleting the user" time="0.032068">
+        <system-out><![CDATA[Given Deleting the user "John"..............................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="Testing Post, Put, Get, Delete API features of User" name="Validating whether the user  got deleted by trying get the status of user name" time="0.026475">
+        <system-out><![CDATA[Given Validating whether user got deleted or not by getting the username....passed
+]]></system-out>
+    </testcase>
+</testsuite>

@@ -1,0 +1,576 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Posting the new values of Pet",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-pet;posting-the-new-values-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2858346200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Posts the new details for Pet",
+            "match": {
+              "location": "PetApiMethod.PostRequest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Post_Pet"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Updating the exisiting values of Pet",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-pet;updating-the-exisiting-values-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 61906100,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User updates the existing details for Pet",
+            "match": {
+              "location": "PetApiMethod.PutRequest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Put_Pet"
+          }
+        ]
+      },
+      {
+        "comments": [
+          {
+            "line": 12,
+            "value": "#@PostImage_Pet"
+          },
+          {
+            "line": 13,
+            "value": "#Scenario: Updating the exisiting values of Pet Image"
+          },
+          {
+            "line": 14,
+            "value": "#Given User uploads images"
+          }
+        ],
+        "line": 17,
+        "name": "Getting the value of Pet",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-pet;getting-the-value-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 80952000,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User gets the pet details by \"available\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "available",
+                  "offset": 30
+                }
+              ],
+              "location": "PetApiMethod.GetRequest(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 71493700,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User gets the pet details by \"Mark\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mark",
+                  "offset": 30
+                }
+              ],
+              "location": "PetApiMethod.GetRequest(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 30845100,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User gets the pet details by \"12\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 30
+                }
+              ],
+              "location": "PetApiMethod.GetRequest(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 16,
+            "name": "@Get_Pet"
+          }
+        ]
+      },
+      {
+        "line": 23,
+        "name": "Deleting the value of Pet",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-pet;deleting-the-value-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 40840500,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "User deletes the Pet ID \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 25
+                }
+              ],
+              "location": "PetApiMethod.DeleteRequest(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 22,
+            "name": "@Delete_Pet"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Post, Put, Get, Delete API features of Pet",
+    "description": "",
+    "id": "testing-post,-put,-get,-delete-api-features-of-pet",
+    "keyword": "Feature",
+    "uri": "Pet.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Pet_API"
+      },
+      {
+        "line": 1,
+        "name": "@Petstore"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Posting the new values of Pet",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-store;posting-the-new-values-of-pet",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 30069900,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User Posts the new details for Store",
+            "match": {
+              "location": "StoreApiMethod.PostRequest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Post_Store"
+          }
+        ]
+      },
+      {
+        "line": 9,
+        "name": "Getting the inventory by Status and Order ID",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-store;getting-the-inventory-by-status-and-order-id",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 39399000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User gets the Store details by order id \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 41
+                }
+              ],
+              "location": "StoreApiMethod.GetByOrderID(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 28659900,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User gets the inventory details by status",
+            "match": {
+              "location": "StoreApiMethod.GetInvertorybyStatus()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 8,
+            "name": "@Get_Store"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Deleting the purchase order",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-store;deleting-the-purchase-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 25303600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User deletes the Order ID \"10\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "10",
+                  "offset": 27
+                }
+              ],
+              "location": "StoreApiMethod.DeleteRequest(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Delete_Store"
+          }
+        ]
+      },
+      {
+        "line": 18,
+        "name": "User validating whether the order details got deleted by trying get the status of deleted order",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-store;user-validating-whether-the-order-details-got-deleted-by-trying-get-the-status-of-deleted-order",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 33796100,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "User validates whether order details deleted or not by getting the order id",
+            "match": {
+              "location": "StoreApiMethod.GetDeletedRequest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Get_Store1"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Post, Put, Get, Delete API features of Store",
+    "description": "",
+    "id": "testing-post,-put,-get,-delete-api-features-of-store",
+    "keyword": "Feature",
+    "uri": "Store.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Store_API"
+      },
+      {
+        "line": 1,
+        "name": "@Petstore"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "Creating a single and multiple user data",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-user;creating-a-single-and-multiple-user-data",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26144600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Creating a new user",
+            "match": {
+              "location": "UserApiMethod.CreateSingleUser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22737100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Creating a list of user",
+            "match": {
+              "location": "UserApiMethod.CreateListOfUser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@Post_User"
+          }
+        ]
+      },
+      {
+        "line": 10,
+        "name": "Updating the exisiting data of the user",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-user;updating-the-exisiting-data-of-the-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 27269700,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "Updating the existing details of \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 34
+                }
+              ],
+              "location": "UserApiMethod.UpdatesTheUser(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Put_User"
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Making the user logging in getting the details of the user then logging out the user",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-user;making-the-user-logging-in-getting-the-details-of-the-user-then-logging-out-the-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 22626500,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "User login to the system by using username \"John\" and password \"12345\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 44
+                },
+                {
+                  "val": "12345",
+                  "offset": 64
+                }
+              ],
+              "location": "UserApiMethod.GetUserLogIn(String,String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 38762400,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Getting the user detail of \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 28
+                }
+              ],
+              "location": "UserApiMethod.GetUser(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 26079300,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User is logging out",
+            "match": {
+              "location": "UserApiMethod.GetUserLogout()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 13,
+            "name": "@Get_User"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "Deleting the user",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-user;deleting-the-user",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 32067900,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Deleting the user \"John\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John",
+                  "offset": 19
+                }
+              ],
+              "location": "UserApiMethod.DeleteUser(String)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@Delete_User"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Validating whether the user  got deleted by trying get the status of user name",
+        "description": "",
+        "id": "testing-post,-put,-get,-delete-api-features-of-user;validating-whether-the-user--got-deleted-by-trying-get-the-status-of-user-name",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 26475500,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Validating whether user got deleted or not by getting the username",
+            "match": {
+              "location": "UserApiMethod.UserDeletedRequest()"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 23,
+            "name": "@Get_User1"
+          }
+        ]
+      }
+    ],
+    "name": "Testing Post, Put, Get, Delete API features of User",
+    "description": "",
+    "id": "testing-post,-put,-get,-delete-api-features-of-user",
+    "keyword": "Feature",
+    "uri": "User.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@User_API"
+      },
+      {
+        "line": 1,
+        "name": "@Petstore"
+      }
+    ]
+  }
+]
