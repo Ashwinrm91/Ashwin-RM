@@ -1,0 +1,1948 @@
+Charter for Exploratory Testing
+
+Feature 01: Installation and Uninstallation of Monefy App
+
+Test Case 1: TC01 Installation of App
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have Android to use the application
+Test Purpose	Whether user can install the app successfully without any issues
+Test Steps	•	Go to Play Store search the app with name “Moneyfy” and download the app.
+Expected & Actual Result	•	Expected
+	Application should be installed successfully without any issues 
+•	Actual 
+	Application installed successfully without any issues
+Bugs & Status	No issues found - Pass
+Time Taken	30 secs based on the Internet speed and Phone configuration
+Priority	High 
+
+
+Test Case 2: TC02 Installation of App without Internet
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have Android phone to use the application
+Test Purpose	Whether user can install the app successfully without any issues if the internet is turned off
+Test Steps	•	Turnoff the Internet
+•	Go to Play Store search the app with name “Moneyfy” and download the app.
+Expected & Actual Result	•	Expected
+	Application should install even when there is not internet
+•	Actual 
+	Application installed successfully without any issues when there is not internet
+Bugs & Status	No issues found - Pass
+Time Taken	1 Min
+Priority	Low 
+
+Test Case 3: TC03 Installation of App without Memory
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have Android phone to use the application
+Test Purpose	Whether user can install the app successfully without any issues if the internal memory is less
+Test Steps	•	Keep the internal memory less than 25MB
+•	Go to Play Store search the app with name “Moneyfy” and download the app.
+Expected & Actual Result	•	Expected
+	Application should not download because of memory issue
+•	Actual 
+	Application has not downloaded and installed due to memory issue
+Bugs & Status	No issues found - Pass
+Time Taken	1 Min
+Priority	High 
+
+
+Test Case 4: TC04 Uninstallation of APP
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	•	User should have Android phone to use the application
+•	User should have “Moneyfy” app installed
+Test Purpose	Whether user can uninstall the app successfully without any issues
+Test Steps	•	Go to the Setting  Application  Select Moneyfy App  Uninstall
+Expected & Actual Result	•	Expected
+	Application should be uninstalled successfully without any issues 
+•	Actual 
+	Application uninstalled successfully without any issues
+Bugs & Status	No issues found - Pass
+Time Taken	10 secs based on the Phone configuration
+Priority	High 
+
+
+
+Feature 02: Introduction Page
+
+Test Case 5: TC01 Introduction page Common use case Testing
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether introduction page is having any issues or not
+Test Steps	•	After installation open the App
+Expected & Actual Result	•	Expected
+	Intro page should not have any issues 
+	Home page should open after navigating through into page with Moneyfy logo on the top
+	User should see three pages with Get Started, Amazing and I’m Ready buttons and background of the screen should be in green colour
+	Once the home page is shown user guide pop up should appear explain the functionality of each feature
+•	Actual 
+	Home page is displayed after Introduction page with Monefy logo on the top
+	User can see three pages with three buttons mentioned in the Actual result with green background on pages
+	When user is in intro page there is no option to close the app inside the app
+	User guide is inconsistent
+	Once user moved to second page user will be unable to navigate to the first page
+Bugs & Status	•	User unable to close the application when user is in Introduction page. Only option is to force close
+•	User cannot move back to the previous page
+
+•	Status - Fail
+Time Taken	30 Secs
+Priority	Low 
+
+
+Feature 03: Home Page icons and Navigations
+
+Test Case 6: TC01 Home Page Options and Icons
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether home page has following options
+	Income Icon (+)
+	Expense Icon (-)
+	Balance option
+	Search button
+	Transfer option
+	Menu option on left-hand side to choose Accounts and Time interval
+	Time interval at the top
+	Basic Expense categories
+	Option to display the expense and the income
+	Menu option on the right-hand side should display with Categories, Accounts, Currencies and Settings
+Test Steps	•	Open the app to see menu
+Expected & Actual Result	•	Expected
+	Home page should have all the mentioned options in the description
+•	Actual 
+	Home page has all the mentioned options in the description
+Bugs & Status	No issues found - Pass
+Time Taken	3 Mins
+Priority	High 
+
+
+Test Case 7: TC02 Navigation to Income Screen
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to new income screen
+Test Steps	•	Open the app 
+•	Select on the income icon from home screen
+•	To check whether on selecting back app is going to home screen
+Expected & Actual Result	•	Expected
+	New income screen should open
+	On Selecting back app should go to the home screen
+•	Actual 
+	New income screen opened
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+
+
+
+Test Case 8: TC03 Navigation to Expense Screen
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to new expense screen
+Test Steps	•	Open the app 
+•	Select the expense Icon from home screen
+•	To check whether on selecting back app is going to home screen
+Expected & Actual Result	•	Expected
+	New expense screen should open
+	On Selecting back app should go to the home screen
+•	Actual 
+	New expense screen opened
+	On selecting back option app is going to the home screen
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+Test Case 9: TC04 Navigation to Balance Option
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to Balance screen
+Test Steps	•	Open the app 
+•	Select the balance option from home screen
+Expected & Actual Result	•	Expected
+	Balance screen should display with zero as default value along with the currency
+	If there is no record it should display “There are not records for this period yet”
+•	Actual 
+	Balance screen is displayed with zero as default value along with the currency
+	It is displaying “There are not records for this period yet” when there is no data
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+
+Test Case 10: TC05 Navigation to Search Icon
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to Search Record
+Test Steps	•	Open the app 
+•	Click on the search icon from home screen
+Expected & Actual Result	•	Expected
+	Text field with keypad open should display
+•	Actual 
+	Text field with keypad open is displayed
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+
+Test Case 11: TC06 Navigation to Transfer Screen
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to New Transfer Screen
+Test Steps	•	Open the app 
+•	Select the Transfer icon from home screen
+•	To check whether on selecting back app is going to home screen
+Expected & Actual Result	•	Expected
+	New Transfer screen should display
+	On Selecting back app should go to the home screen
+•	Actual 
+	New Transfer screen is displayed
+	On selecting back option app is going to the home screen
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+Test Case 12: TC07 Navigation to Account and Time Interval
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can see Account information and time interval to choose
+Test Steps	•	Open the app 
+•	Select the menu button on the left-hand side top
+Expected & Actual Result	•	Expected
+	User should be able to see the account information and time interval on selecting the menu on left-hand side top of the app
+•	Actual 
+	User can see the account information and time interval
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+
+Test Case 13: TC08 Navigation to Specific Expense Category
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is navigated to new expense screen by selecting specific expense
+Test Steps	•	Open the app 
+•	Select the Specific expense icon from home screen
+•	To check whether on selecting back app is going to home screen
+Expected & Actual Result	•	Expected
+	New expense screen should be displayed
+	On Selecting back app should go to the home screen
+•	Actual 
+	New expense screen is displayed
+	On selecting back option app is going to the home screen
+Bugs & Status	No issues found - Pass
+Time Taken	5 secs
+Priority	High 
+
+Feature 04: Income Screen
+
+Test Case 14: TC01 New Income Screen
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is displayed with following option
+	Calendar button with date
+	Option to choose the mode of payment
+	Text field with amount zero and option to erase the amount entered
+	Calculator options
+	Repeat income option
+	Choose category button
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+Expected & Actual Result	•	Expected
+	User should be displayed with all the mentioned options in the description
+•	Actual 
+	All mentioned options are displayed
+Bugs & Status	No issues found - Pass
+Time Taken	20 secs
+Priority	High 
+
+
+Test Case 15: TC02 Calendar
+
+TC2.1: Choosing the date
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can select the proper date range
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Select the calendar icon
+Expected & Actual Result	•	Expected
+	User should always see the current date in the calendar when opening
+	User should be able to select the date range for 200 years by selecting the dropdown i.e. (User should be able to select the year range from 1900 to 2100)
+	User should be able to navigate to the next and previous month by using selection >< buttons
+	User should be able to select the proper date range
+•	Actual 
+	Current date is displayed on opening new income screen
+	Date range for 200 years is displayed
+	User is able navigate between months using selection button
+	User can select the proper date range
+Bugs & Status	No issues found - Pass
+Time Taken	5 Mins
+Priority	High 
+
+
+TC 2.2: Editing the date Positive Scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can edit the date with proper range
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Select the calendar icon
+•	Select on the Edit button
+Expected & Actual Result	•	Expected
+	User should see the text field with current date already filled
+	Date field should accept only dd/mm/yy format
+	On selecting Ok with proper date range newly update date should reflect
+	On selecting cancel changed date should not get reflected
+•	Actual 
+	User is displayed with text field where the current date is already displayed
+	Date field is accepting only dd/mm/yy format
+	Newly updated date with proper date range is selected
+	Changed date is not reflected when user select cancel
+Bugs & Status	No issues found - Pass
+Time Taken	15 Mins
+Priority	High 
+
+
+TC 2.3: Editing the date Negative scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can edit the date with invalid date range
+•	To check whether user can edit the date with empty values
+•	To check whether user can give the date before 1900 or after 2100
+•	To check whether user can be able to edit the date with wrong format
+•	To check whether user can give alphabetical character in the text field
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Select the calendar icon
+•	Select on the Edit button
+Expected & Actual Result	•	Expected
+	User will not be able to edit the date with invalid range. If invalid range is given user should see the error message as “Invalid format use dd/mm/yy” with example
+	If the date field is empty, then OK button should be disabled
+	User should be unable to select the date range before 1900 beyond 2100
+	User should not be able to enter alphabetical character. Even pasting should not support
+•	Actual 
+	User can update the invalid range with no error message, but date is not getting updated
+	User is unable to update the date before 1900 and after 2100
+	Ok button is disabled when not values entered
+	User is unable to enter/paste alphabetical character
+Bugs & Status	Error message for invalid date is not coming but date is not getting updated - Fail
+Time Taken	20 Mins
+Priority	High 
+
+
+Test Case 16: TC03 Text Field
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether default value of text field is zero
+•	To check whether user is able change the payment method
+•	To check whether user can give the value more than 999999999
+•	To check whether user is able delete the entered value
+•	To check whether user can enter Zero amount
+•	Check whether user can enter negative value
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Change the payment method and verify the second point in the Test Purpose
+•	Trying to enter the value more than 999999999 in the text field and verify third point in the Test Purpose
+•	Delete the entered value and verify fourth point in the Test Purpose
+•	Select Choose category and verity fifth point in the Test Purpose
+•	Enter negative value and verify sixth point
+Expected & Actual Result	•	Expected
+	When user opens income screen default value is zero
+	User can change the payment method
+	User should be able to enter value more than 999999999
+	User should be able to delete the entered value
+	User should not be allowed to enter negative or zero value. Text field should turn to red colour as a warning
+•	Actual 
+	Default value is zero when user opens the income screen
+	User can change the payment method
+	User is unable to enter more than 999999999
+	User can delete the entered amount
+	User is unable to enter zero or negative value
+Bugs & Status	No issue
+Time Taken	10 Mins
+Priority	High 
+
+
+Test Case 17: TC04 Notes
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is able enter any character including emoji
+•	To check whether user can insert Gif or Image
+•	To check whether any character count restriction is there or not
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Try entering all the characters in Note field and verify step no 1 in Test purpose
+•	Try inserting gif or image and verify step no 2 in Test purpose
+•	Try typing as many as characters and verify step no 3 in Test purpose
+Expected & Actual Result	•	Expected
+	Note should support all the characters
+	Inserting of GIF or Image should throw the error message “Monefy doesn’t support image insertion here”
+	User should be able to enter as many as character without any issues
+•	Actual 
+	Note supports all the characters
+	Inserting GIF/Image throws the error “Monefy doesn’t support image insertion here”
+	There is not character count restriction
+Bugs & Status	No issue
+Time Taken	10 Mins
+Priority	High 
+
+Test Case 18: TC05 Calculator 
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether the entered value is getting update in the text field
+•	To check whether Arithmetical operations are working as expected
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Try entering numbers and verify step no 1 in Test purpose
+•	Do the Arithmetical calculation and verify step no 2 in Test Purpose
+Expected & Actual Result	•	Expected
+	All the entered numbers should be displayed properly
+	Arithmetic operation should work find
+•	Actual 
+	All the entered numbers are getting displayed
+	When a user enters number and selects + and = it is showing the double the selected amount.  
+Bugs & Status	10 + without entering another number if user selects= it gives the value of 20. It is doubling automatically which supposed to happen - Fail
+Time Taken	5 Mins
+Priority	High
+
+Test Case 19: TC06 Choose Category 
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether basic category is available in new income
+•	To check app is showing paid offer page when user clicks additional category is selected
+•	To check app is showing additional category when user is paid user
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Enter amount and select the category and verify 1st step in the Test Purpose
+•	Select the additional category and verify 2nd step in the Test Purpose if the user is not a paid user 
+•	Select the addition category and verify 3rd step in the Test Purpose if user is paid user
+Expected & Actual Result	•	Expected
+	Basic category “Deposits”, “Salary” & Savings should be displayed.
+	Selecting additional category should display the paid offer page if user is not a paid user
+	Selecting additional category should display the additional category to add if the user is paid user
+•	Actual 
+	Basic categories are displayed
+	Selecting additional category shows paid offer page for basic user
+	Selecting additional category shows additional category to add for paid user
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 20: TC07 Repeat
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check app is showing paid offer page when user clicks repeat icon
+•	To check app is showing repeat feature if the user is paid user
+•	To check income is repeated on selected date
+•	To check “Repeat” text is showing on pressing Repeat icon for 3 seconds
+Test Steps	•	Open the app 
+•	Select the Income icon from home screen
+•	Enter the date and amount
+•	Choose Repeat option and verify step 1 and 2 in the test purpose
+•	Press repeat icon for 3 seconds
+Expected & Actual Result	•	Expected
+	If the user is free user, then Paid offer page should show
+	If the user is paid user, then user should be able to use repeat feature
+	Income should repeat for specified time interval once the user selects repeat
+	“Repeat” text should show on pressing repeat icon for 3 seconds
+	
+•	Actual 
+	Paid offer page shows for free user on clicking repeat icon
+	Repeat feature is shown for paid user
+	Income is repeated for specified time interval once the user selects the repeat
+	“Repeat” text is showing once the user press repeat icon for 3 seconds
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	High
+
+Feature 05: Expense Screen
+
+Test Case 21: TC01 New Expense Screen
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user is displayed with following option
+	Calendar button with date
+	Option to choose the mode of payment
+	Text field with amount zero and option to erase the amount entered
+	Calculator options
+	Repeat expense option
+	Choose category button
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+Expected & Actual Result	•	Expected
+	User should be displayed with all the mentioned options in the description
+•	Actual 
+	All mentioned options are displayed
+Bugs & Status	No issues found - Pass
+Time Taken	20 secs
+Priority	High 
+
+
+Test Case 22: TC02 Calendar
+
+TC2.1: Choosing the date
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can select the proper date range
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Select the calendar icon
+Expected & Actual Result	•	Expected
+	User should always see the current date in the calendar when opening
+	User should be able to select the date range for 200 years by selecting the dropdown i.e. (User should be able to select the year range from 1900 to 2100)
+	User should be able to navigate to the next and previous month by using selection >< buttons
+	User should be able to select the proper date range
+•	Actual 
+	Current date is displayed on opening new Expense screen
+	Date range for 200 years is displayed
+	User is able navigate between months using selection button
+	User can select the proper date range
+Bugs & Status	No issues found - Pass
+Time Taken	5 Mins
+Priority	High 
+
+
+TC 2.2: Editing the date Positive Scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can edit the date with proper range
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Select the calendar icon
+•	Select on the Edit button
+Expected & Actual Result	•	Expected
+	User should see the text field with current date already filled
+	Date field should accept only dd/mm/yy format
+	On selecting Ok with proper date range newly update date should reflect
+	On selecting cancel changed date should not get reflected
+•	Actual 
+	User is displayed with text field where the current date is already displayed
+	Date field is accepting only dd/mm/yy format
+	Newly updated date with proper date range is selected
+	Changed date is not reflected when user select cancel
+Bugs & Status	No issues found - Pass
+Time Taken	15 Mins
+Priority	High 
+
+
+TC 2.3: Editing the date Negative scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can edit the date with invalid date range
+•	To check whether user can edit the date with empty values
+•	To check whether user can give the date before 1900 or after 2100
+•	To check whether user can be able to edit the date with wrong format
+•	To check whether user can give alphabetical character in the text field
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Select the calendar icon
+•	Select on the Edit button
+Expected & Actual Result	•	Expected
+	User will not be able to edit the date with invalid range. If invalid range is given user should see the error message as “Invalid format use dd/mm/yy” with example
+	If the date field is empty, then OK button should be disabled
+	User should be unable to select the date range before 1900 beyond 2100
+	User should not be able to enter alphabetical character. Even pasting should not support
+•	Actual 
+	User can update the invalid range with no error message, but date is not getting updated
+	User is unable to update the date before 1900 and after 2100
+	Ok button is disabled when not values entered
+	User is unable to enter/paste alphabetical character
+Bugs & Status	Error message for invalid date is not coming but date is not getting updated - Fail
+Time Taken	20 Mins
+Priority	High 
+
+Test Case 23: TC03 Text Field
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether default value of text field is zero
+•	To check whether user is able change the payment method
+•	To check whether user can give the value more than 999999999
+•	To check whether user is able delete the entered value
+•	To check whether user can enter Zero amount
+•	Check whether user can enter negative value
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Change the payment method and verify the second point in the Test Purpose
+•	Trying to enter the value more than 999999999 in the text field and verify third point in the Test Purpose
+•	Delete the entered value and verify fourth point in the Test Purpose
+•	Select Choose category and verity fifth point in the Test Purpose
+•	Enter negative value and verify sixth point
+Expected & Actual Result	•	Expected
+	When user opens Expense screen default value is zero
+	User can change the payment method
+	User should be able to enter value more than 999999999
+	User should be able to delete the entered value
+	User should not be allowed to enter negative or zero value. Text field should turn to red colour as a warning
+•	Actual 
+	Default value is zero when user opens the Expense screen
+	User can change the payment method
+	User is unable to enter more than 999999999
+	User can delete the entered amount
+	User is unable to enter zero or negative value
+Bugs & Status	No issue
+Time Taken	10 Mins
+Priority	High 
+
+Test Case 24: TC04 Notes
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is able enter any character including emoji
+•	To check whether user can insert Gif or Image
+•	To check whether any character count restriction is there or not
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Try entering all the characters in Note field and verify step no 1 in Test purpose
+•	Try inserting gif or image and verify step no 2 in Test purpose
+•	Try typing as many as characters and verify step no 3 in Test purpose
+Expected & Actual Result	•	Expected
+	Note should support all the characters
+	Inserting of GIF or Image should throw the error message “Monefy doesn’t support image insertion here”
+	User should be able to enter as many as character without any issues
+•	Actual 
+	Note supports all the characters
+	Inserting GIF/Image throws the error “Monefy doesn’t support image insertion here”
+	There is not character count restriction
+Bugs & Status	No issue
+Time Taken	10 Mins
+Priority	High 
+
+Test Case 25: TC05 Calculator 
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether the entered value is getting update in the text field
+•	To check whether Arithmetical operations are working as expected
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Try entering numbers and verify step no 1 in Test purpose
+•	Do the Arithmetical calculation and verify step no 2 in Test Purpose
+Expected & Actual Result	•	Expected
+	All the entered numbers should be displayed properly
+	Arithmetic operation should work find
+•	Actual 
+	All the entered numbers are getting displayed
+	When a user enters number and selects + and = it is showing the double the selected amount.  
+Bugs & Status	10 + without entering another number if user selects= it gives the value of 20. It is doubling automatically which is not supposed to happen - Fail
+Time Taken	5 Mins
+Priority	High
+
+Test Case 26: TC06 Choose Category 
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether basic category is available in new Expense
+•	To check app is showing paid offer page when user clicks additional category is selected
+•	To check app is showing additional category when user is paid user
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Enter amount and select the category and verify 1st step in the Test Purpose
+•	Select the additional category and verify 2nd step in the Test Purpose if the user is not a paid user 
+•	Select the addition category and verify 3rd step in the Test Purpose if user is paid user
+Expected & Actual Result	•	Expected
+	Basic category “Deposits”, “Salary” & Savings should be displayed.
+	Selecting additional category should display the paid offer page if user is not a paid user
+	Selecting additional category should display the additional category to add if the user is paid user
+•	Actual 
+	Basic categories are displayed
+	Selecting additional category shows paid offer page for basic user
+	Selecting additional category shows additional category to add for paid user
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 27: TC07 Repeat
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check app is showing paid offer page when user clicks repeat icon
+•	To check app is showing repeat feature if the user is paid user
+•	To check expense is repeated on selected date
+•	To check “Repeat” text is showing on pressing Repeat icon for 3 seconds
+Test Steps	•	Open the app 
+•	Select the Expense icon from home screen
+•	Enter the date and amount
+•	Choose Repeat option and verify step 1 and 2 in the test purpose
+•	Press repeat icon for 3 seconds
+Expected & Actual Result	•	Expected
+	If the user is free user, then Paid offer page should show
+	If the user is paid user, then user should be able to use repeat feature
+	Expense should repeat for specified time interval once the user selects repeat
+	“Repeat” text should show on pressing repeat icon for 3 seconds
+•	Actual 
+	Paid offer page shows for free user on clicking repeat icon
+	Repeat feature is shown for paid user
+	Expense is repeated for specified time interval once the user selects the repeat
+	“Repeat” text is showing once the user press repeat icon for 3 seconds
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 28: TC08 Specific Category
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check expense can be added by clicking expense icon from home page
+•	To check added expense is mapped to the balance pie chart 
+•	To Name of the specific expense
+Test Steps	•	Open the app 
+•	Select the Specific Expense category icon from home screen
+•	Add the expense
+Expected & Actual Result	•	Expected
+	Selecting specific category icon from the home screen should take the user to new expense screen with Add selected category name
+	Added expense should be mapped to the pie chart with percentage
+	Pressing on specific expense should display name on the pie chart
+•	Actual 
+	Selecting the specific category icon from the home screen takes the user to new expense screen with Add selected category name
+	Added expense is mapped to the balance pie chart with percentage
+	Pressing on specific expense is displaying name on the pie chart
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	High
+
+
+Feature 06: Balance Screen
+
+Test Case 28: TC01 Balance Screen Features
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check balance is showing without mathematical error with time interval above the balance 
+•	To check all the income and expense added is reflecting in balance screen along with date and Notes added
+•	To check once the income/expense are added user can notification message at the bottom in the format
+Category: Amount added
+•	To check whether user can cancel the added amount
+•	To check whether user can edit or delete the income/expense
+•	To check if same category of income or expense added whether it is getting reflected along with date
+•	To check whether income or expense can be viewed either by date or the amount entered
+•	To check whether user can close the balance screen by selecting back or balance icon.
+•	To check whether income is shown in green colour and expense is shown in red colour
+•	To check whether selecting income or expense takes you the selected income or expense from balance screen
+•	To check whether enter data (Income/Expense) count is shown for date
+Test Steps	•	Open the app 
+•	Add the income and expense and verify step 2, 3, 4, 5 and 6 in test purpose
+•	Select the balance or three-line icon to open the balance and verify the 1st step
+Expected & Actual Result	•	Expected
+	Correct balance should show without any mathematical error
+	All income and expense added should be reflected without any limitations
+	For e.g. If same category added twice then it should reflect as 2 to the specific category
+	User should be able see the added message
+	User should be able edit/delete the added income
+	User should be able to revert the added amount by pressing cancel
+	User should be able to view the balance data either by data or my amount entered
+	Income should show in green colour and expense should show in green colour
+	Selecting income or expense should take you to the selected income or expense
+	Count of the total income/expense should be reflected for the specific date
+•	Actual 
+	Correct balance is showed without any issues
+	All income and expenses are reflected without any issues
+	If same category is added it showing the no of times it added along with the date
+	User able to filter the data either by date or by amount entered
+	User is able see the added message at the bottom of the screen
+	User can revert, Edit, and cancel the added income/expense
+	Income shows green colour and expense shows red colour
+	Selected income or expense from balance page is taking user to the selected income or expense page
+	Count of the total income/expense is reflecting for specific date
+Bugs & Status	No issues found – Pass
+Time Taken	25 Mins
+Priority	High
+
+Feature 07: Search
+
+Test Case 29: TC01 Search Features
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check search can accept any character as input
+•	To check whether user can search with name or notes added with income or expense
+•	To check when there is not record found
+Test Steps	•	Open the app 
+•	Add the income and expense
+•	Open Balance and search with the name or notes
+Expected & Actual Result	•	Expected
+	All characters should be included as input
+	When the user search with income or expense it should display the result
+	When no records found it should give the message as “No records have been found. Try searching by category account or not. Use < and > to restrict the search further”
+•	Actual 
+	All characters are accepted as input
+	Searching with name/notes gives the correct result
+	When no records found it is displaying the message as mentioned in the expected result
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	Medium
+
+
+Feature 08: Transfer
+
+Test Case 30: TC01 Transfer to Different account
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	•	User should have “Moneyfy” app installed
+•	User should have account to transfer the money
+Test Purpose	•	To check whether Calendar, Text field to enter the amount, notes to enter, From and To account is displayed when user selects transfer option
+•	Check whether user is able transfer the amount
+•	Check transferred amount is reflecting in the account and balance screen
+Test Steps	•	Open the app 
+•	Click on transfer
+•	Select the date, amount add note if applicable
+•	Choose the from account and to account
+•	Select ADD TRANSFER
+Expected & Actual Result	•	Expected
+	All the options mentioned in the test purpose should be displayed
+	User should be able to transfer the amount without any issues. 
+	User should see the transfer amount reflected in the account and in balance screen. Either it is an income or an expense
+•	Actual 
+	All options are displayed in new transfer page
+	User can be able to transfer the money without any issues
+	User can see the amount transferred in an account and balance screen.
+Bugs & Status	No issues found – Pass
+Time Taken	10 Mins
+Priority	High
+
+
+Test Case 31: TC02 Transfer to Same account
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	•	User should have “Moneyfy” app installed
+•	User should have account to transfer the money
+Test Purpose	•	To check whether user can transfer the amount to the same account
+Test Steps	•	Open the app 
+•	Click on transfer
+•	Select the date, amount add note if applicable
+•	Choose the from account and to account as same account
+•	Select ADD TRANSFER
+Expected & Actual Result	•	Expected
+	User should see the error message as “Accounts have to be different”
+•	Actual 
+	User can see the error message “Accounts have to be different” on transferring to same account
+Bugs & Status	No issues found – Pass
+Time Taken	2 Mins
+Priority	Medium
+
+Feature 09: Account and Time interval change menu
+Test Case 32: TC01 Account Change
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check user can be able to change the account and see the respective income/expense details
+•	To check whether changed account name is reflecting on the top of home screen
+Test Steps	•	Open the app 
+•	Click the left-hand side menu to change the account information
+•	Select the desired account
+Expected & Actual Result	•	Expected
+	User should be able to change the account and information of each account should be reflected
+	Name of account chosen should be displayed on top of home screen
+•	Actual 
+	User can change the account and each account information is reflecting without any issues
+	Name of the chosen account is displayed on top of the home screen
+Bugs & Status	No issues found – Pass
+Time Taken	5 Mins
+Priority	High
+
+
+Test Case 33: TC02 Time Interval Change
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check user can be able to change the time interval to Day, Week, Month, Year, All, choose a specific date & select an interval
+Test Steps	•	Open the app 
+•	Click the left-hand side menu to change the time interval
+•	Select the time interval
+Expected & Actual Result	•	Expected
+	If the user selects the Day, then data for each day in the current year should be reflected. If the customer swipes next day should be displayed
+	If the user selects Week, then data for each week in the current year should be reflected. If the customer swipes next week should be displayed
+	If the user selects Month, then data for each month in the current year should be reflected. If the customer swipes next month should be displayed
+	If the user selects Year, then data for the current year should be reflected. If the customer swipes next year should be displayed
+	If the customer selects ALL, then irrespective of date all data should be displayed
+	If the customer selects Time interval, then data for the specified interval should be displayed
+	If the customer selects a specific data, then data for the specified data should be displayed
+•	Actual 
+	Data for Day, Week, Month, Year, All, Specific time interval and specific date is getting reflected properly
+Bugs & Status	Swiping of time interval is inconsistent sometimes user can swipe sometimes not – Fail (Partial)
+Time Taken	5 Mins
+Priority	High
+
+Feature 10: Categories
+Test Case 34: TC01 Free Category
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is displayed with basic income categories mentioned below for free users while choosing income
+	Deposits
+	Salary
+	Savings
+•	To check whether user is displayed with basic expense categories mentioned below for free users while choosing expense/in home screen
+	Taxi
+	Eating out
+	Toiletry
+	Health
+	Gifts
+	Communication
+	Home
+	Entertainment
+	Car
+	Food
+	Pet
+	Clothing
+	Sports 
+	Transports
+Test Steps	•	Open the app 
+•	Add the income/expense
+•	Choose the category
+Expected & Actual Result	•	Expected
+	All the mentioned category for income and expense should be displayed properly for the free users
+•	Actual 
+	All the mentioned category for income and expenses are displayed properly for the free users
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	Medium
+
+
+Test Case 35: TC02 Paid Category
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether free user can add to extra category
+•	To check whether paid user can add extra category
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Categories
+Expected & Actual Result	•	Expected
+	When free user tries to access extra category then user should be displayed paid pro service screen
+	When paid user tried to access or add extra category, then user should be able to access the extra category
+•	Actual 
+	When free user tries to access paid category, it is displaying paid pro service screen
+	Paid user can access the extra category
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	Medium
+
+
+Test Case 36: TC03 Edit Category
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can rename the category with any character
+•	To check whether user can name the category with empty field
+•	To check whether user can disable the category
+•	To check whether user can merge the category
+•	To check whether disable category is displayed while merging category
+•	To check if user can merge more than one category
+•	To whether user can re-enable the disabled category
+•	To check whether update category is reverted using cancel
+•	To check whether category updated message is displayed at the bottom once the category is updated
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Categories
+•	Select any one category and verify 1,2 steps in test purpose
+•	Select any one category and select righthand menu and verify step 3,4,5, and 6
+Expected & Actual Result	•	Expected
+	User should be able to rename the category and there should not be any count for the name
+	User should not be able to leave the name field blank
+	User should be able to disable the category, but it is reflecting the balance page
+	User should be able merge the two categories but not more than that
+	User should not see the disabled categories while merging the account
+	User should be able to reenable the disabled category
+	User should be able to revert the changes made to category by selecting cancel
+	Category updated message should be displayed at the bottom with changes saved
+•	Actual 
+	User can rename the categories with any characters even emoji and there is no count for the name
+	User is unable to leave the name field blank
+	User can merger the two categories but cannot do more than that
+	User don’t see the disabled categories while merging
+	User can reenable the disabled category
+	User can revert the category changes by selecting cancel button
+	Category updated message is displayed at the bottom with changes saved
+Bugs & Status	No Issues found - Pass
+Time Taken	10 Mins
+Priority	Medium
+
+
+Test Case 37: TC04 Delete Category
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can delete the category
+•	To check whether category is removed from home screen
+•	To check whether deleted category can be added back
+•	To check delete button should not be there when there is only one category
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Categories
+•	Select any one category and verify 1,2 steps in test purpose
+•	Select any one category and choose delete button
+Expected & Actual Result	•	Expected
+	User should be able to delete the category
+	User should confirmation message “Are you Sure? All associated records will be removed”. You can merge or disable it instead” with ok or cancel button
+	Category should be removed from home screen
+	Deleted category should not be able to add by free user again. Only paid user can add it back
+	Delete button should not be there when there is only one category
+•	Actual 
+	User can delete the category
+	Before deleting user is able see the warning message “Are you Sure? All associated records will be removed”.
+	Deleted category is not displayed in the home screen
+	Free user unable to add the deleted category only paid user can add
+	Delete button is disabled when there is only one category
+Bugs & Status	No Issues found - Pass
+Time Taken	3 Mins
+Priority	Medium
+
+
+Test Case 36: TC05 Closing of Category
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can go back to home screen by selecting back button or swiping right
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Categories
+•	Select back button
+Expected & Actual Result	•	Expected
+	User can come to home screen by selecting back button and swiping left
+•	Actual 
+	User can come to home screen by selecting back button and swiping left
+Bugs & Status	No Issues found - Pass
+Time Taken	3 Mins
+Priority	Medium
+
+Feature 11: Accounts
+Test Case 37: TC01 Adding Account
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose		To check user can add the account 
+	To check whether is there any default account available
+	To check whether added account is reflecting in all places
+	To check no of account a user can add
+	To check whether user can add the account from income and expense option & Transfer option
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Choose +
+Expected & Actual Result	•	Expected
+	User should be able to add the account without an issue
+	After installation by default user should see cash and visa payment in the account
+	Added account should reflect along with name and images in income screen, Left and right-side menu
+	User should be able to add any number of accounts
+	If there is no account is added, then account can be added by selecting income and expense icon & Transfer option
+•	Actual 
+	User can add the account without any issues
+	After installation user can see cash and visa as default payment method
+	Added account is reflecting along with name and images in all the places mentioned in expected result
+	User can add any number of accounts
+	User can add the account by selecting income and expense icon & Transfer icon when there is not account
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	High
+
+Test Case 38: TC02 Editing Account
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose		To check user can edit the account by selecting it
+	To check user can edit the account without giving name
+	To check whether edit account is reflecting in all places
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select account which you want to edit
+Expected & Actual Result	•	Expected
+	User should be able to edit the account without any issue
+	User should not be able to add or edit the account without giving name
+	After editing changes should reflect in income screen, Left and right-side menu
+•	Actual 
+	User can edit the account without any issues
+	User is unable to edit or add the account without giving name
+	Edited account is reflecting income screen, Left and right-side menu
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	High
+
+
+Test Case 39: TC03 Account Currency
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose		To check free user can change the account currency
+	To check paid user can change the account currency
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+Expected & Actual Result	•	Expected
+	Free user should not be able to change the account currency
+	Paid user should be able to change the account currency
+•	Actual 
+	Free user is unable to change the currency
+	Paid user can change the account currency
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	Medium
+
+Test Case 40: TC04 Initial Account Balance
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose		To check user can add account with zero initial balance
+	To check initial account is displayed with zero amount
+	To check add amount is getting reflected in the balance page
+	To check whether there is any limit for entering balance
+	To check whether included in balance is added while creating the account if it is enabled
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+Expected & Actual Result	•	Expected
+	User should be able to add the account with zero initial balance
+	While creating new account initial account balance should be zero
+	Added amount is reflected in the balance page
+	There should not be any limit for entering balance
+	User should be able to enable and disable Included in balance
+•	Actual 
+	User can add the account with zero initial balance
+	User is displayed with zero as initial account balance
+	Added amount is reflected in the balance page
+	There is no limit in adding initial balance
+	User can enable and disable the included in balance
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	Medium
+
+
+Test Case 41: TC05 Initial Balance Date
+
+TC4.1: Choosing the date
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can select the proper date range
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+•	Select the calendar icon
+Expected & Actual Result	•	Expected
+	User should always see the current date in the calendar when opening
+	User should be able to select the date range for 200 years by selecting the dropdown i.e. (User should be able to select the year range from 1900 to 2100)
+	User should be able to navigate to the next and previous month by using selection >< buttons
+	User should be able to select the proper date range
+•	Actual 
+	Current date is displayed on opening new account screen
+	Date range for 200 years is displayed
+	User is able navigate between months using selection button
+	User can select the proper date range
+Bugs & Status	No issues found - Pass
+Time Taken	2 Mins
+Priority	Medium 
+
+
+TC 4.2: Editing the date Positive Scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	To check whether user can edit the date with proper range
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+•	Select the Calendar button
+Expected & Actual Result	•	Expected
+	User should see the text field with current date already filled
+	Date field should accept only dd/mm/yy format
+	On selecting Ok with proper date range newly update date should reflect
+	On selecting cancel changed date should not get reflected
+•	Actual 
+	User is displayed with text field where the current date is already displayed
+	Date field is accepting only dd/mm/yy format
+	Newly updated date with proper date range is selected
+	Changed date is not reflected when user select cancel
+Bugs & Status	No issues found - Pass
+Time Taken	2 mins
+Priority	Medium 
+
+
+TC 4.3: Editing the date Negative scenario
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can edit the date with invalid date range
+•	To check whether user can edit the date with empty values
+•	To check whether user can give the date before 1900 or after 2100
+•	To check whether user can be able to edit the date with wrong format
+•	To check whether user can give alphabetical character in the text field
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+•	Select the calendar icon
+•	Select on the Edit button
+Expected & Actual Result	•	Expected
+	User will not be able to edit the date with invalid range. If invalid range is given user should see the error message as “Invalid format use dd/mm/yy” with example
+	If the date field is empty, then OK button should be disabled
+	User should be unable to select the date range before 1900 beyond 2100
+	User should not be able to enter alphabetical character. Even pasting should not support
+•	Actual 
+	User can update the invalid range with no error message, but date is not getting updated
+	User is unable to update the date before 1900 and after 2100
+	Ok button is disabled when not values entered
+	User is unable to enter/paste alphabetical character
+Bugs & Status	Error message for invalid date is not coming but date is not getting updated - Fail
+Time Taken	2 mins
+Priority	Medium 
+
+
+Test Case 42: TC06 Images
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can add the account without selecting image
+•	To check whether there are 25 images available to choose
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+•	Select Add after filling mandatory information
+Expected & Actual Result	•	Expected
+	User should see “No image added” when user select add button without selecting the image
+	User should choose between 25 images available
+•	Actual 
+	User is displayed with error message when user selects add without selecting the image
+	25 images are displayed to choose
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose		To check whether user can add the account without selecting image
+	To check whether there are 25 images available to choose
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select +
+•	Select Add after filling mandatory information
+Expected & Actual Result	•	Expected
+	User should see “No image added” when user select add button without selecting the image
+	User should choose between 25 images available
+•	Actual 
+	User is displayed with error message when user selects add without selecting the image
+	25 images are displayed to choose
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 43: TC07 Merge Account
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can merge the account
+•	To check if user can merge more than one category
+•	To check whether update account is reverted using cancel
+•	To check whether account updated message is displayed at the bottom once the category is updated
+•	To check merged account is having details of two accounts
+•	To check whether user can unmerge the account
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select an account
+Expected & Actual Result	•	Expected
+	User should be able to merge the account
+	User should be able merge the two accounts but not more than that
+	User should not see the disabled account while merging
+	User should be able to revert the changes made to account by selecting cancel
+	Account updated message should be displayed at the bottom with changes saved
+	Merged account should have the details of two accounts
+	User should not be able to unmerge the account
+•	Actual 
+	User can merge the account
+	User can merger the two accounts but cannot do more than that
+	User don’t see the disabled account while merging
+	User can revert the account changes by selecting cancel button
+	Account updated message is displayed at the bottom with changes saved
+	Merged account is having details of two accounts
+	User is not able to unmerge the account
+Bugs & Status	No Issues found - Pass
+Time Taken	10 Mins
+Priority	High
+
+Test Case 44: TC08 Enabling and Disabling Account
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can disable the account
+•	To check whether user can re-enable the disabled account
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select account available
+Expected & Actual Result	•	Expected
+	User should be able to disable the account, but it is reflecting the balance page
+	User should be able to re-enable the disabled account
+	Account disabling should reflect in all places
+•	Actual 
+	User can re-enable the disabled account
+	User should be able to disable the account
+	Account disabling is reflecting in all places
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+
+Test Case 45: TC09 Account Delete
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can delete the account
+•	To check whether account is deleted in Balance Screen, Income Screen, Left and right-side menu
+•	To check whether user can see alert message while deleting the account
+•	To check whether user can delete all the account
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Accounts
+•	Select account
+•	Select Delete
+Expected & Actual Result	•	Expected
+	User should be able to delete the account
+	Account should be deleted from Balance Screen, Income screen, Left and right-side of the menu
+	User should see the alert message “All associated records will be removed. You can merge or disable it instead”
+	User should be able to delete all the account
+•	Actual 
+	User can delete the account
+	Deleted account should reflect in Balance screen, Income screen, Left and right-side of the screen
+	User should see the alert message before deleting
+	User can delete all the account
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+
+Feature 12: Currencies
+Test Case 46: TC01 Currency
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether free user can access the currency screen
+•	To check whether paid user can access the currency screen
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Currencies
+Expected & Actual Result	•	Expected
+	Free user should not have access to the Currencies screen
+	Paid user should have the access to the Currencies screen
+•	Actual 
+	Free user doesn’t have the access to the Currencies screen. User should be displayed with error paid pro-offer page
+	Paid user should have access to the Currencies screen
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	High
+
+Feature 13: Settings
+
+Balance
+Test Case 47: TC01 Balance Budget Mode
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can enable and disable budget mode
+•	To check budget mode is disabled by default
+•	To check whether user could see the information message with question for Monthly budget amount 
+•	To check whether text field is accepting only numbers
+•	To check whether text field is accepting maximum of 9999999999 number and minimum of 1
+•	To check whether text field accepting 0 or negative value
+•	To check whether text field is accepting decimal value
+•	To check whether amount along with the currency shown if the budget mode is enabled
+•	To check if expense is mapped to the budget instead of income when budget mode is enabled
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Enable Budget mode
+Expected & Actual Result	•	Expected
+	User should be able to enable and disable budget mode 
+	Budget mode should be disabled by default
+	When text field opens user should see info message with question ““How much do you want to spend for a month?”
+	Text field should accept only number and maximum number and minimum number it can accept is 9999999999 and 1
+	When user tries to enter 0 or negative value it should throw the error message as “Budget amount should be positive” and “Budget amount cannot be negative”
+	Text field should accept decimal values
+	Amount along with currency should shown if the Budget mode is enabled
+	Budget mode should be mapped against expense if the budget mode is enabled
+•	Actual 
+	User can enable and disable budget mode 
+	Budget mode is disabled by default
+	When text field opens user can see info message with question ““How much do you want to spend for a month?”
+	Text field accepts only number and maximum number and minimum number it accepts is 9999999999 and 1
+	When user tries to enter 0 or negative value it throws the error message as “Budget amount should be positive” and “Budget amount cannot be negative”
+	Text field accepts decimal values
+	Amount along with currency is shown if the Budget mode is enabled
+	Budget mode is mapped against expense in pie chart home page if the budget mode is enabled
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	High
+
+
+Test Case 48: TC02 Balance Carry over
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is displayed with carry over option if the carry over is enable
+•	To check whether user can enable or disable carry over
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Enable Carry over
+Expected & Actual Result	•	Expected
+	If user enable carry over it should reflect in home screen pie chart.
+	User should be able to enable and disable the carry over option
+•	Actual 
+	If user enable carry over it is reflecting in home screen pie chart.
+	User can enable and disable the carry over option
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	Medium
+
+Test Case 49: TC03 Future Recurring Records
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user is displayed with Future Recurring option if the Future Recurring Records is enabled
+•	To check whether user can enable or disable Future Recurring option
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Future Recurring option 
+Expected & Actual Result	•	Expected
+	If user enable Future Recurring Record, it should reflect in home screen pie chart.
+	User should be able to enable and disable the Future Recurring Record option
+•	Actual 
+	If user enable Future Recurring Record, it is reflecting in home screen pie chart.
+	User can enable and disable the Future Recurring Record option
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	Medium
+
+General Settings
+Test Case 50: TC01 Unlock Moneyfy Pro
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether free user is displayed with offer page when user selects “Unlock Moneyfy Pro”
+•	To check whether offer page has pricing with discount
+•	To check whether offer page has privacy policy and Terms of use
+•	To check whether offer page has Restore option
+•	To check whether offer page has CLAIM MY OFFER option
+•	To check whether Unlock Moneyfy Pro option is enabled for paid users
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Unlock Monefy Pro
+Expected & Actual Result	•	Expected
+	Free user should be displayed with Moneyfy pro-offer page
+	Offer page should have discounted amount
+	Offer page should have Privacy Policy and Terms of Use links. On clicking them browser should open with each page respectively
+	Offer page should have restore option based on the previous data it should restore the paid account if not it should say “No Records Found”
+	Claim my offer should take to the payment page
+	Once payment is completed user should see all the feature unlocked
+	Paid user should not see Unlock Moneyfy Pro option
+•	Actual 
+	Free user is displayed with Moneyfy pro-offer page
+	Offer page has discounted amount
+	Offer page has Privacy Policy and Terms of Use links. On clicking them browser is opening with each page respectively
+	Offer page has restore option based on the previous data it restores the paid account if not it says “No Records Found”
+	Claim my offer takes to the payment page
+	Once payment is completed user can see all the feature unlocked
+	Paid user is not displayed with “Unlock Moneyfy Pro” option
+Bugs & Status	No Issues found - Pass
+Time Taken	5 Mins
+Priority	High
+
+Test Case 51: TC02 Dark Theme
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether free user is displayed with offer page when user selects “Dark Theme”
+•	To check whether paid user is displayed with dark theme reflecting all over the app
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Dark Theme
+Expected & Actual Result	•	Expected
+	Free user should be displayed with Moneyfy pro-offer page on selecting Dark Theme
+	Paid user should be displayed with Dark theme on selecting the option
+•	Actual 
+	Free user is displayed with Moneyfy pro-offer page on selecting Dark Theme
+	Paid user is displayed with Dark theme on selecting the option
+Bugs & Status	No Issues found - Pass
+Time Taken	1 Min
+Priority	Medium
+
+Test Case 52: TC03 Language
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	App’s default language should be English
+•	App should be displayed with 19 languages to choose
+•	Changing on App language should change the entire app language
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Language
+Expected & Actual Result	•	Expected
+	Default language of the app should be English
+	App should be available in 19 languages
+	Changing of language should reflect is all the places
+•	Actual 
+	Default language of the app is English
+	App is available in 19 languages
+	Changing of language is not reflecting is all the places
+Bugs & Status	Changing from English to some other language doesn’t work. App is still showing English in many places - Fail
+Time Taken	1 Min
+Priority	High
+
+Test Case 53: TC04 Currency
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check App’s default currency should be Local Currency
+•	To check currency used all over the world is available
+•	To check changing of currency is reflecting in all places like Account screen, Transfer, Balance screen, Income and Expense screen
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Currency
+Expected & Actual Result	•	Expected
+	Default Currency of the app should be Local Currency
+	Currency used all over the world should be available 
+	Changing of currency should reflect in all places like Account screen, Transfer, Balance screen, Income and Expense screen.
+•	Actual 
+	Default Currency of the app is Local Currency 
+	Currency used all over the world is available
+	Changing of currency is reflecting in all places like Account screen, Transfer, Balance screen, Income and Expense screen
+Bugs & Status	No Issue Found - Pass
+Time Taken	1 Min
+Priority	High
+
+Test Case 54: TC05 First day of the week
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check first day of the week is displayed as Sun by default
+•	Check whether changing of first day of week is reflecting in all places wherever applicable
+•	Check whether user can type in the day to select
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select First day of week
+Expected & Actual Result	•	Expected
+	First day of the week should be Sunday by default
+	All day in a week should be available to select
+	Changing the first day of the week should reflect in all places
+	User should be able to type in first day of the week.
+•	Actual 
+	First day of the week is Sunday by default
+	All day in a week is available to select
+	Changing the first day of the week is reflecting in all places
+	User is unable be able to type in first day of the week
+Bugs & Status	Inconsistency found. Sometime user can type in sometime not - Fail
+Time Taken	1 Min
+Priority	High
+
+
+Test Case 55: TC06 First day of the Month
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check first day of the month is displayed as 1 by default
+•	To check whether changing of first day of month is reflecting in all places wherever applicable
+•	To check whether user can type in the day to select
+•	To check whether user can type in only numbers
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select First day of week
+Expected & Actual Result	•	Expected
+	First day of the month should be 1 by default
+	Changing the first day of the month should reflect in all places
+	User should be able to type in first day of the week.
+	User should be able to type in only numbers
+•	Actual 
+	First day of the month is 1 by default
+	Changing the first day of the month is reflecting in all places
+	User is unable be able to type in first day of the week
+	User can type in only numbers
+Bugs & Status	When user type in the number and selects it is not selecting - Fail
+Time Taken	1 Min
+Priority	High
+
+Test Case 56: TC07 Passcode Protection
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether free user have access to the passcode protection
+•	To check whether paid user have access to the passcode protection
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Passcode Protection
+Expected & Actual Result	•	Expected
+	Free user should be displayed with Moneyfy Pro offer screen when trying to access Passcode Protection
+	Paid user should have the access to the Passcode Protection
+•	Actual 
+	Free user is be displayed with Moneyfy Pro offer screen when trying to access Passcode Protection
+	Paid user should have the access to the Passcode Protection
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	High
+
+Test Case 57: TC08 Review Application
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check selecting Review application takes to the user to the Play store/App store depends on the OS
+•	To check whether user is getting back to the app on selecting back button
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Review Application
+Expected & Actual Result	•	Expected
+	User should be displayed with Play Store/App Store depends on the OS when the user selects Review application
+	User should come back to the application on selecting back button
+•	Actual 
+	User should be displayed with Play Store/App Store depends on the OS when the user selects Review application
+	User should come back to the application on selecting back button
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	High
+
+
+Test Case 58: TC09 Export to CSV
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether a pop up opens with drop down for Character set, Decimal separator, Delimiter character when user select Export to file
+•	To check format of the file which user export
+•	To check whether exported file is sharable
+•	To check the rows of the CSV column
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Export to file
+Expected & Actual Result	•	Expected
+	User should be displayed with pop up with list of drop down mentioned in the test purpose
+	Exported file should always be in the CSV format
+	When user clicks OK user should be displayed with share option to share the exported file
+	User should come back to the application on selecting back button
+	CSV file should have list of rows mentioned below
+	Date
+	Account
+	Category
+	Amount
+	Currency
+	Converted
+	Currency 
+	Description
+•	Actual 
+	User is displayed with pop up with list of drop down mentioned in the test purpose
+	Exported file is in the CSV format
+	When user clicks OK user is displayed with share option to share the exported file
+	User can come back to the application after selecting back button
+	All the rows mentioned in the expected result should be displayed
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	High
+
+
+Test Case 59: TC010 About Monefy
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether a pop up with links to Moneyfy.me, Play Store/App Store & buttons Disable google analytics and Ok is displayed when user selects About Monefy
+•	Check whether user can enable and disable Google analytics
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select About Monefy
+Expected & Actual Result	•	Expected
+	User should be displayed with all the attribute mentioned in the test purpose on selecting about Monefy
+	User should be able to enable and disable google analytics
+	User should come back to the application on selecting back button
+
+•	Actual 
+	User is displayed with all the attribute mentioned in the test purpose on selecting about Monefy
+	User can enable and disable google analytics
+	User can come back to the application on selecting back button
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	High
+
+
+Test Case 60: TC011 Privacy Policy
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether browser opens with Privacy policy page when user selects Privacy policy
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Privacy Policy
+Expected & Actual Result	•	Expected
+	User should see default browser is getting opened with privacy policy page
+	User should come back to the application on selecting back button
+
+•	Actual 
+	User can see default browser is getting opened with privacy policy page on selecting privacy policy
+	User can come back to the application on selecting back button
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	Low
+
+Test Case 61: TC012 Copy Purchase ID
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can see Copied message after selecting Copy Purchase ID
+•	To check whether the copy ID is encrypted
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Copy Purchase ID
+Expected & Actual Result	•	Expected
+	User should see copy message on selecting Copy Purchase ID
+	Copied Purchase ID should be encrypted
+
+•	Actual 
+	User can see copy message on selecting Copy Purchase ID 
+	Copied Purchase ID is encrypted
+Bugs & Status	No Issues Found - Pass
+Time Taken	1 Min
+Priority	Low
+
+
+Synchronization
+Test Case 62: TC01 Dropbox
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether data is getting synchronized when paid user is selects Dropbox
+•	To check free user can access Dropbox
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Dropbox
+Expected & Actual Result	•	Expected
+	All the data should synchronize to the drop box for the paid user
+	For free user it should be displayed with Moneyfy pro-offer page when user selects Dropbox
+•	Actual 
+	All the data gets synchronized to the drop box for the paid user
+	Free user is displayed with Moneyfy pro-offer page
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+
+Test Case 63: TC02 Google Drive
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether data is getting synchronized when paid user is selects Google Drive
+•	To check free user can access Google Drive
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Google Drive
+Expected & Actual Result	•	Expected
+	All the data should synchronize to the Google Drive for the paid user
+	For free user it should be displayed with Moneyfy pro-offer page when user selects Google Drive
+•	Actual 
+	All the data gets synchronized to the Google Drive for the paid user
+	Free user is displayed with Moneyfy pro-offer page on selecting Google Drive
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+Data Backup
+Test Case 64: TC01 Create Data Backup
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can back up data by selecting “Create data backup”
+•	To check whether data back is stored with file name of specific format
+•	To check whether user can rename the file
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Create data backup
+Expected & Actual Result	•	Expected
+	User should be able to create a backup data by selecting Create data backup
+	File name of the format should be “monefy_backup_yyyy_mm_dd_hh_mm_ss”
+	Once user clicks ok file should download
+	User should be able to rename the file
+	User should come back to the application on selecting back button
+•	Actual 
+	User can backup data by selecting Create data backup and should see the message backup created
+	File name is in the format of “monefy_backup_yyyy_mm_dd_hh_mm_ss”
+	Once user clicks ok file is downloaded
+	User can rename the file
+	User can come back to the application on selecting back button
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 65: TC02 Restore Data
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can restore the data by clicking Restore data
+•	To check whether user can upload the file 
+•	To check whether user can see the message once the data is restored
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Restore data
+Expected & Actual Result	•	Expected
+	User should be able Restore the data by selecting restore option
+	User should check whether all the data is restored or not
+	User should see the message “Data is restored”
+•	Actual 
+	User is able Restore the data by selecting restore option
+	All the data is restored without any issues 
+	User can see the message “Data is restored” once the restoration is completed
+Bugs & Status	No Issues found - Pass
+Time Taken	2 Mins
+Priority	High
+
+Test Case 66: TC03 Clear Data
+
+
+Date	23-03-2022
+Tester’s Name	Ashwin RM
+Pre-Conditions	User should have “Moneyfy” app installed
+Test Purpose	•	To check whether user can clear the data by selecting Clear data
+•	To check User should see the confirmation message with Yes and No button
+•	To check User should see clearing data is reflected in all places
+Test Steps	•	Open the app 
+•	Select Right-hand side menu 
+•	Select Settings
+•	Select Restore data
+Expected & Actual Result	•	Expected
+	User should be able to clear the data when user selects clear data
+	User should see the confirmation message once the data is cleared
+	User should see the Confirmation message “Your data will be deleted completely including the data in Google Drive and Dropbox. Do you want to continue?”
+	Data should be cleared from all places in the app including Dropbox and Google Drive
+•	Actual 
+	User can clear the data when user selects clear data
+	User can see the confirmation message once the data is cleared
+	User can see the Confirmation message “Your data will be deleted completely including the data in Google Drive and Dropbox. Do you want to continue?” with button Yes and No
+	Data is not cleared properly
+Bugs & Status	Data is not cleared properly - Fail
+Time Taken	2 Mins
+Priority	High
+
