@@ -11,7 +11,7 @@ Bugs discovered
 
 Major issues
 
-Whenever the user clears the data. The data is not clearing properly.
+1) Whenever the user clears the data. The data is not clearing properly.
 Steps to reproduce
 
 Enable budget mode with some amount
@@ -19,49 +19,49 @@ Open settings --> Clear data
 After clearing the data again enable budget mode
 It should ask you to enter the budget but it is restoring the data.
 
-User can save the backup data without having any name after the download the file becomes invalid
+2) User can save the backup data without having any name after the download the file becomes invalid
 
-It is not clearing the budget added
+3) It is not clearing the budget added
 
-3)If the free user deletes the categories it is not possible for them to add the categories again.
+4) If the free user deletes the categories it is not possible for them to add the categories again.
 
-Unable to close the app (Unless it is force close) when you are on the introduction page and the user is unable to move back to the first slide after moving to the second.
+5) Unable to close the app (Unless it is force close) when you are on the introduction page and the user is unable to move back to the first slide after moving to the second.
 
-If the user 10 + = in the calculator it is giving the value as 20. It should not return any response unless the second value is entered.
+6) If the user 10 + = in the calculator it is giving the value as 20. It should not return any response unless the second value is entered.
 
-Changing of language doesn't work. Even when the user changes the language we can see English in many places.
+7) Changing of language doesn't work. Even when the user changes the language we can see English in many places.
 
-When a customer is entering an amount in a specific currency then the user changes the currency. The amount should be based on currency conversion but it shows the same amount for new currency as well. It should not suppose to work in that way.
+8) When a customer is entering an amount in a specific currency then the user changes the currency. The amount should be based on currency conversion but it shows the same amount for new currency as well. It should not suppose to work in that way.
 
-There is no way to see google analytics data
+9 There is no way to see google analytics data
 
 Note: Not sure if it is developed in that way
 
 Minor Issues
 
-Error message for format 26/03/22/22/22 in the calendar is not showing. For other irregular formats, it looks fine.
+1) Error message for format 26/03/22/22/22 in the calendar is not showing. For other irregular formats, it looks fine.
 
-Inconsistency in swiping between the time interval on the home page.
+2) Inconsistency in swiping between the time interval on the home page.
 
-Issues with entering text on the first day of the month and the first day of the week.
+3) Issues with entering text on the first day of the month and the first day of the week.
 
-Error message stays longer if the user selects the button multiple times.
+4) Error message stays longer if the user selects the button multiple times.
 
-Each time the data is changing in the time interval menu "Choose a date"
+5) Each time the data is changing in the time interval menu "Choose a date"
 
 Limitations/Drawbacks
 
-Account is based on the play store, not on the app. If the customer is having multiple play store accounts he can access pro features only using the particular account which the user paid with.
+1) Account is based on the play store, not on the app. If the customer is having multiple play store accounts he can access pro features only using the particular account which the user paid with.
 
-User has to manually enter the income and expense
+2) User has to manually enter the income and expense
 
-Notes are not having any character count restrictions
+3) Notes are not having any character count restrictions
 
-Name can be added even with Emoji
+4) Name can be added even with Emoji
 
-Not more than 999999999 amount can be added to the income/expense but the Initial account balance doesn't have any limitations
+5) Not more than 999999999 amount can be added to the income/expense but the Initial account balance doesn't have any limitations
 
-We will be unable to unmerge the account
+6) We will be unable to unmerge the account
 
 Prioritization of the test
 
