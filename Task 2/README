@@ -1,6 +1,6 @@
 Cucumber BDD Framework --- Restappured API Automation
 
-Features of Framework:
+Why this framework and Features of Framework:
 
 The framework is created in such a way where feature line in the feature file is mapped to the Java methods.
 
